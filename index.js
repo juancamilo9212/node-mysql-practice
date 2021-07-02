@@ -13,7 +13,7 @@ app.post('/insert',(request,response) => {
     const {nombre} = request.body;
     const db = dbService.getDbServiceInstance();
     const result = db.createName(nombre);
-    result.then(data => response.json({success:true}))
+    result.then(data => response.json(data))
     .catch(err => console.log(err));
 });
 

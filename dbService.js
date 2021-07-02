@@ -76,7 +76,6 @@ class DbService{
                     resolve(result);
                 });
             });
-            console.log(response);
         } catch (error) {
             console.log(error);
         }
@@ -100,7 +99,6 @@ class DbService{
             }
         } catch (error) {
             console.log(error);
-            
         }
     }
 }
